@@ -16,3 +16,11 @@ Use this as a starting point to complete the WDD 231 personal activity. We will 
 ## Other commands
 
 - `npm run build` to build final files when you are ready to turn in.
+
+## URL
+https://nationalpark123.netlify.app/ 
+
+## logo
+location
+calendar
+fee-22
