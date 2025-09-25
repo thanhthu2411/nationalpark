@@ -331,3 +331,85 @@ svg {
   font-size: 0.7rem;
 
 }
+
+/* infor intro  */
+/* #main {
+  margin: 2rem auto;
+  width: 92%;
+} */
+
+.intro-container {
+  padding: 1rem;
+}
+
+.intro-container h1 {
+  font-family: var(--bs-font-serif);
+  font-weight: normal;
+}
+
+.infor-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+
+}
+
+.infor-container > * {
+  flex: 1;
+}  /* all img have same height  */
+
+.media-card a {
+  text-decoration: none;
+}
+
+.media-card h3 {
+  color: #383737;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.media-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(101, 100, 100);
+}
+
+
+@media screen and (min-width: 650px) {
+.infor-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+}
+
+/* footer  */
+
+#park-footer {
+  background-image: url("../images/footer-bg.png");
+  padding: 1.5rem;
+}
+
+.contact h3 {
+  text-transform: uppercase;
+  font-family: var(--bs-font-serif);
+  margin-bottom: 1rem;
+}
+
+.contact h4 {
+  margin-top: 0.8rem;
+  margin-bottom: 0rem;
+  font-size: 1rem;
+
+}
+
+.contact p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1;
+  color: rgb(101, 100, 100);
+
+}
+
