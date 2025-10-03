@@ -1,0 +1,51 @@
+
+
+/* infor intro  */
+
+.intro-container {
+  padding: 1rem;
+}
+
+.intro-container h1 {
+  font-family: var(--bs-font-serif);
+  font-weight: normal;
+}
+
+.infor-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+
+}
+
+.infor-container > * {
+  flex: 1;
+}  /* all img have same height  */
+
+.media-card a {
+  text-decoration: none;
+}
+
+.media-card h3 {
+  color: #383737;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.media-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: rgb(101, 100, 100);
+}
+
+
+@media screen and (min-width: 650px) {
+.infor-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+}
+
