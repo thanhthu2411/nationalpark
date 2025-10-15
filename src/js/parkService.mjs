@@ -241,6 +241,21 @@ export function getParkInfoLinks() {
   return parkInfoLinks;
 }
 
+export  async function getAlerts () {
+  const alertData = await getJson("alerts?parkCode=glac")
+  return alertData.data;
+}
+
+export  async function getVisitorCenter () {
+  const alertData = await getJson("visitorcenters?parkCode=glac")
+  return alertData.data;
+}
+
+export async function getActivity() {
+    const parkData = await getJson("parks?parkCode=glac");
+    return parkData.data[0].activities;
+}
+
 
 // api returns json like this
 // jsonData = {
