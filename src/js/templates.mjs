@@ -1,3 +1,4 @@
+import spritePath from '../images/sprite.symbol.svg';
 
 // banner infor
 export function parkInfoTemplate(infor) {
