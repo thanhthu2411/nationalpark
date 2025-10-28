@@ -2,7 +2,7 @@ import {footerTemplate, parkInfoTemplate } from "./templates.mjs";
 
 
 //header section
-export default function setHeaderFooterInfo(data) {
+export function setHeaderFooterInfo(data) {
   const disclaimer = document.querySelector(".disclaimer > a");
   disclaimer.href = data.url;
   disclaimer.innerText = data.fullName;
@@ -25,3 +25,26 @@ export default function setHeaderFooterInfo(data) {
 }
 
 
+
+export function enableNavigation() {
+    const menuBtn = document.querySelector("#global-nav-toggle");
+    const globalNav = document.querySelector(".global-nav");
+
+    menuBtn.addEventListener("click", (event) => {
+      let target = event.target;
+
+      globalNav.classList.toggle("show");
+
+      if (target.tagName != "BUTTON")  {
+        target = target.closest("button");
+      }
+
+      if (globalNav.classList.contains("show"))
+      {
+        target.setAttribute("aria-expanded", true);
+      } else {
+        target.setAttribute("aria-expanded", false);
+
+      }
+    })
+}
