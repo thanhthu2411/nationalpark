@@ -109,6 +109,10 @@
   display: flex;
 }
 
+.global-nav__section-heading {
+  color: white;
+}
+
 
 /* banner  */
 .banner img {
