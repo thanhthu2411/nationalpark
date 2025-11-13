@@ -1,6 +1,6 @@
 import { getParkData, getParkInfoLinks, getInfoLinks } from "./parkService.mjs";
 import { introSectionTemplate, mediaCardTemplate} from "./templates.mjs";
-import {setHeaderFooterInfo, enableNavigation} from "./setHeaderFooter.mjs"
+import {setHeaderFooterInfo} from "./setHeaderFooter.mjs"
 import "../css/style.css";
 import "../css/home.css";
 

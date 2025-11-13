@@ -65,25 +65,77 @@
   transition: all 1s ease;
 }
 
-.show {
-  max-height: 1000px;
 
-}
-
-#global-nav-toggle .global-nav--closed {
+.global-nav__toggle .global-nav--closed {
   display: flex;
   align-items: center;
+
 }
 
-#global-nav-toggle .global-nav--open {
+.global-nav__toggle .global-nav--open {
   display: none;
   align-items: center;
+
+}
+
+.global-nav__section-heading1 {
+  color: rgb(123, 168, 123);
+  padding-left: 0.625rem;
+}
+
+.global-nav__section-heading2 {
+  color: rgb(152, 152, 205);
+  padding-left: 0.625rem;
+}
+
+.global-nav__list {
+  padding: 0;
+  border-top: 1px solid #444;
+  margin: 0;
 }
 
 .global-nav__split-button {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  background-color: var(--bs-gray-800);
+}
+
+.global-nav__split-button > a {
+  flex: 1;
+  align-self: center;
+  padding: 1rem 0.625rem;
+  display: block;
+}
+
+.global-nav__split-button > button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-left: 1px solid rgb(90, 89, 89);
+  padding: 1rem 1.3rem;
+
+
+    /* display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 1rem 1.25rem;
+  border-left: 1px solid #444; */
+}
+
+.global-nav__split-button > button:hover,
+.global-nav__split-button > a:hover {
+  background-color: var(--bs-gray-900);
+}
+
+.global-nav__submenu {
+  margin-left: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  font-size: 0.8rem;
+  transition: all 1s ease;
+
 }
 
 .global-nav a {
@@ -91,27 +143,83 @@
   text-decoration: none;
 }
 
-.global-nav button {
-  background-color: transparent;
-  cursor: pointer;
-  margin-right: 1rem;
-  border: none;
+
+.global-nav__submenu a {
+  display: block;
+  padding: 1rem 0rem;
+}
+
+.global-nav__submenu a:hover {
+  text-decoration: underline;
 }
 
 .global-nav svg {
   --icon-color: white;
+  background-color: transparent;
+}
+
+.show {
+  max-height: 1000px;
+
 }
 
 .global-nav__toggle[aria-expanded="true"] .global-nav--closed {
   display: none;
+  transition: all 1s ease;
+
 }
 .global-nav__toggle[aria-expanded="true"] .global-nav--open {
+  transition: all 1s ease;
   display: flex;
 }
 
-.global-nav__section-heading {
-  color: white;
-  margin-left: 1rem;
+
+.icon {
+  transition: all 0.5s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+
+@media (min-width: 768px) {
+  .global-nav > h2,
+  .global-nav__list:first-of-type {
+    display: none;
+  }
+
+  .global-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .global-nav__list li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .global-nav__split-button a {
+    font-size: 1rem;
+    background-color: black;
+  }
+
+  .global-nav__split-button__toggle {
+    display: none;
+  }
+
+  .global-nav__submenu {
+    display: flex;
+    flex-direction: column;
+    max-height: fit-content;
+  }
+
+  .global-nav__submenu li a {
+    padding: 0.7rem;
+  }
+
 }
 
 
