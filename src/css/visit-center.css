@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+main {
+  margin: 1.5rem;
+}
+
+.vc-name {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  border-bottom: 1px solid rgb(228, 225, 225);
+  padding-bottom: 0.8rem;
+}
+
+.icon {
+  background-color: transparent;
+  fill: black;
+}
+
+.vc-info figure {
+  margin: 1em 3em;
+}
+
+@media (min-width: 768px) {
+    .vc-info figure img {
+        max-width: 600px;
+    }
+}
+.vc-info figcaption {
+  font-size: 0.8rem;
+}
+
+.vc-info figcaption > span {
+  display: block;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.vc-details-list details {
+  border: 0.6px solid rgb(195, 193, 193);
+  border-radius: 2px;
+  border-left: none;
+  padding: 0.9rem 0;
+}
+
+.vc-details-list summary {
+  display: flex;
+  text-transform: uppercase;
+  margin-left: 0.8rem;
+  gap: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.vc-details-list svg {
+  width: 1rem;
+  height: 1rem;
+}
+
+#vd-addresses section,
+#vd-directions p,
+#vd-contact section {
+  margin-left: 1rem;
+}
+
+#vd-amenities ul {
+  list-style: none;
+}
+
+#vd-amenities li {
+  margin-bottom: 1rem;
+}
+
+.vc-gallery > h2 {
+  text-transform: uppercase;
+  font-size: 1.15rem;
+}
+
+.vc-gallery ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.vc-gallery img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.vc-details-list summary::marker,
+.vc-details-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.vc-details-list summary::after {
+  content: "";
+  position: absolute;
+  right: 1rem; 
+  width: 1rem;
+  height: 1rem;
+  background-image: url("../images/arrow.svg");
+  background-size: 1rem 1rem;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.vc-details-list details[open] > summary::after {
+  transform: rotate(180deg);
+}
