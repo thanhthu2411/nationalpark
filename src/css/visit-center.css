@@ -23,9 +23,15 @@ main {
   margin: 1em 3em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 950px) {
     .vc-info figure img {
-        max-width: 600px;
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .vc-info figure {
+        width: 900px;
+      margin: 1rem auto;
     }
 }
 .vc-info figcaption {

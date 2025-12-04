@@ -104,7 +104,7 @@ export function centerInfoTemplate(center) {
             <figure>
                 <img src="${images.url}" alt="${images.altText}">
                 <figcaption>
-                        // ${images.caption} <span>${images.credit}</span>
+                        ${images.caption} <span>${images.credit}</span>
                 </figcaption>
             </figure>
             <p>${center.description}</p>
