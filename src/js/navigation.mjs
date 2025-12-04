@@ -1,3 +1,4 @@
+
 export function enableNavigation() {
     const menuBtn = document.querySelector("#global-nav-toggle");
     const subMenuBtns = document.querySelectorAll(".global-nav__split-button__toggle");
