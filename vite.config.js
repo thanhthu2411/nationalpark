@@ -6,7 +6,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
   root: "src/",
-
+ base: '/nationalpark/',
   build: {
     outDir: "../dist",
     rollupOptions: {
