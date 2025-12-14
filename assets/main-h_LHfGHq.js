@@ -1,0 +1,1 @@
+import{g as a,a as e,s as o,i,m as r,b as s}from"./style-Cb_62VEw.js";const c=s();function m(n){const t=document.querySelector(".intro-container");t.innerHTML=i(n)}function f(n){const t=n.map(r);document.querySelector(".infor-container").innerHTML=t.join("")}async function k(){const n=await a();e(n.images),o(n),m(n),f(c)}k();enableNavigation();
